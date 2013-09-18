@@ -1,0 +1,15 @@
+﻿<Window x:Class="ChessTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="479" Width="440">  
+    <Grid Name="MainGrid" Height="424" Width="424">
+        <StackPanel Margin="0,-4,0,-8">
+            <ToolBar>
+                <Button Content="Reset Board" Click="ResetButton_Click"></Button>
+            </ToolBar> 
+        </StackPanel>
+        <Canvas Height="400" Width="400" Background="#E8E8E8" Margin="12,27,0,-3" Name="grid" HorizontalAlignment="Left"></Canvas>
+        <Canvas Height="400" Width="400" Margin="12,27,0,-3" Name="ChessBoard" HorizontalAlignment="Left"></Canvas>
+        <Canvas Height="400" Width="400" Margin="12,27,0,-3" Name="Moves" HorizontalAlignment="Left"></Canvas>
+    </Grid>
+</Window>
